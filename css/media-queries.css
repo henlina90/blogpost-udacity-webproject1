@@ -1,0 +1,116 @@
+/* DESKTOP */
+
+@media (min-width: 901px) {
+  /* .container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "sd sd main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+    border: 2px solid red;
+  } */
+
+  .header {
+    grid-area: header;
+    padding: 20px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    padding: 20px;
+  }
+
+  .content {
+    grid-area: content;
+    padding: 20px;
+  }
+  /* 
+  .header {
+    grid-area: header;
+    padding: 20px;
+  } */
+
+  .flex-container {
+    display: flex;
+    background-color: center;
+    justify-content: center;
+  }
+
+  /* .flex-container > div {
+    background-color: #f3f3f3;
+    margin: 1px;
+    padding: auto;
+    font-size: 30px;
+    border-radius: 15px;
+    width: 100%;
+    float: inline-start;
+  } */
+  .flex-container > div {
+    background-color: #272727;
+    margin: 5px;
+    padding: 100px;
+    font-size: 20px;
+    width: 25px;
+    height: 50px;
+    border-radius: 15px;
+  }
+}
+
+/* XSMALL & SMALL DEVICES */
+@media (min-width: 320px) and (max-width: 599px) {
+  /* .container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "sd sd main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+    border: 2px solid red;
+  } */
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .flex-container > div {
+    background-color: #07ff51;
+    margin: 1em;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 90%;
+  }
+}
+
+/* SMALL TO MEDIUM DEVICES */
+@media (min-width: 600px) and (max-width: 900px) {
+  /* .container {
+    display: grid;
+    grid-template-columns: 500px 50px 50px;
+    grid-template-rows: 80px 80px;
+    grid-template-areas:
+      "hd"
+      "sd"
+      "main"
+      "ft";
+    border: 2px solid rgb(38, 0, 255);
+  } */
+  .flex-container {
+    display: flex;
+    background-color: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .flex-container > div {
+    background-color: #ff0707;
+    margin: 1em;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: 100px;
+  }
+}

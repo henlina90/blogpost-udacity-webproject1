@@ -1,0 +1,35 @@
+@import "@udacity/veritas-styles/dist/index.css";
+@import "@udacity/veritas-styles/dist/foundation.css";
+
+.container {
+  /* Step 1: Set display to grid */
+  display: grid;
+  /* Step 2: setup rows amd columns */
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 200px 400px 200px;
+  grid-template-areas:
+    "hd"
+    "feat"
+    "main"
+    "ft";
+  border: 2px solid yellow;
+}
+.box {
+  width: 100%;
+  border: 1px solid red;
+  background: #f8fa9d;
+}
+
+.header {
+  grid-area: hd;
+}
+
+.footer {
+  grid-area: ft;
+}
+.feature {
+  grid-area: feat;
+}
+.content {
+  grid-area: main;
+}
