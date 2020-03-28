@@ -1,4 +1,4 @@
-/* BASE STYLE */
+/*  BASE STYLE  */
 
 html,
 body {
@@ -10,8 +10,6 @@ body {
 
 .sidebar {
   grid-area: sidebar;
-  /* margin: 0;
-  padding: 0; */
 }
 
 .nav-container {
@@ -40,16 +38,11 @@ a:hover {
 
 .icons {
   display: flex;
-  /* justify-content: space-around; */
   cursor: pointer;
   margin-top: 1.5em;
   justify-content: space-between;
   width: 130px;
 }
-
-/* .fa-address-card-o {
-  font-size: 1.5em !important;
-} */
 
 .fa-facebook-square {
   font-size: 1.8em !important;
@@ -95,7 +88,6 @@ a:hover {
   display: inline-block;
   margin: 3px 1px;
   cursor: pointer;
-  /* border-radius: 15px; */
   font-weight: 600;
 }
 
@@ -116,7 +108,6 @@ a:hover {
 }
 
 .wrapper {
-  /* text-align: center; */
   margin: 1em;
   padding: 1.5em;
   display: grid;
@@ -127,19 +118,8 @@ a:hover {
     "header  header  header"
     "sidebar content content"
     "footer  footer  footer";
-  /* background-color: rgb(224, 220, 220); */
-  /* color: rgb(199, 218, 31); */
   justify-content: center;
 }
-
-/* .box {
-  /* background-color: rgb(224, 220, 220); */
-/* color: rgba(49, 49, 49, 0.925); */
-/* padding: 10px;
-  font-size: 20px; */
-/* margin-top: 1.5em; */
-/* padding: 1rem;
-} */
 
 .flex-container {
   display: flex;
@@ -152,9 +132,8 @@ a:hover {
   height: 100%;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  color: #fff;
-  font-weight: 600;
-  font-size: 5em;
+  background-position: bottom;
+  margin-top: 2em;
 }
 
 .img-1 {
@@ -168,7 +147,7 @@ a:hover {
 .img-3 {
   background-image: url("../img/img-1.jpg");
 }
-
+/* 
 .footer {
   grid-area: footer;
   height: 60px;
@@ -178,40 +157,10 @@ a:hover {
   bottom: 0;
   width: 100%;
   margin-bottom: 1em;
-}
+} */
 
 .copyright {
   float: right;
   padding-right: 1.5em;
   padding-top: 1em;
 }
-
-/* .flex-container > div {
-  background-color: #e40d79;
-  margin: 10px;
-  padding: 100px;
-  font-size: 30px;
-  justify-content: center;
-  border-radius: 15px;
-} */
-
-/* .sidebar {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.nav li {
-  display: block;
-  font-size: 20px;
-  padding: 20px;
-}
-
-a:link {
-  background-color: rgb(233, 233, 233);
-  color: rgb(78, 0, 131);
-}
-
-a:hover {
-  background-color: rgb(179, 179, 179);
-} */
