@@ -22,24 +22,23 @@
       <div class="header" style="font-family: serif;">
         <h1>Blog.</h1>
         <div class="icons">
-          <i class="fa fa-facebook-square"></i>
-          <i class="fa fa-github-square"></i>
-          <i class="fa fa-linkedin-square"></i>
-          <i class="fa fa-twitter-square"></i>
+          <a href="http://google.com"><i class="fa fa-facebook-square"></i></a>
+          <a href="http://google.com"><i class="fa fa-github-square"></i></a>
+          <a href="http://google.com"><i class="fa fa-linkedin-square"></i></a>
+          <a href="http://google.com"><i class="fa fa-twitter-square"></i></a>
         </div>
+        <hr />
       </div>
       <div class="sidebar">
         <div class="nav-container">
-          <div>
-            <i class="fa fa-file-code-o nav-icon"></i> <a href="/">Portfolio</a>
+          <div class="nav-icon">
+            <a href="/"><i class="fa fa-file-code-o "></i>Portfolio</a>
           </div>
-          <div>
-            <i class="fa fa-user-circle-o nav-icon"></i> <a href="/">Contact</a>
+          <div class="nav-icon">
+            <a href="/"><i class="fa fa-user-circle-o"></i>Contact</a>
           </div>
         </div>
         <h4>Drop a quick comment <i class="fa fa-commenting-o"></i></h4>
-        <p></p>
-
         <form>
           <fieldset>
             <legend><em>hello</em></legend>
@@ -49,7 +48,7 @@
               name="name"
               placeholder="your message goes here"
               cols="25"
-              rows="6"
+              rows="6.5"
             ></textarea>
             <br />
             <button class="button">send</button>
@@ -58,16 +57,35 @@
       </div>
 
       <div class="content">
-        <h2>Welcome to my first frontend project for Udacity.</h2>
-        <span><small>[click below to explore]</small></span>
-        <div class="flex-container blog-img">
-          <div class="img-1"><span>My Blogs</span></div>
-          <div class="img-2"><span>Recent Projects</span></div>
-          <div class="img-3"><span>Services</span></div>
+        <h2>Welcome to my first blog.</h2>
+        <div>
+          <i span class="fa fa-ellipsis-h"></i><i class="fa fa-ellipsis-h"></i
+          ><i class="fa fa-ellipsis-h"></i></span>
+        </div>
+        <p><small>[click below to explore]</small></p>
+        <div class="flex-container">
+          <div class="img-1">
+            <a href="/"
+              ><span>My Blogs <i class="fa fa-plus"></i></span>
+              <img src="../img/img-1.jpg" alt="blog image" class="img1" />
+            </a>
+          </div>
+          <div class="img-1">
+            <a href="/"
+              ><span>Recent Projects <i class="fa fa-plus"></i></span>
+              <img src="../img/img-2.jpg" alt="blog image" class="img1" />
+            </a>
+          </div>
+          <div class="img-1">
+            <a href="/"
+              ><span>Let's Connect <i class="fa fa-plus"></i></span>
+              <img src="../img/img-4.jpg" alt="blog image" class="img1" />
+            </a>
+          </div>
         </div>
       </div>
-      <div class="footer" style="color:white; font-size: small">
-        <span class="copyright">&copy; Lina's Blog</span>
+      <div class="footer">
+        <span class="copyright">&copy; Lina's Blog 2020</span>
       </div>
     </div>
   </body>
