@@ -1,35 +1,47 @@
-@import "@udacity/veritas-styles/dist/index.css";
-@import "@udacity/veritas-styles/dist/foundation.css";
+/*  BASE STYLE FOR BLOG-POSTS */
 
-.container {
-  /* Step 1: Set display to grid */
-  display: grid;
-  /* Step 2: setup rows amd columns */
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 200px 400px 200px;
-  grid-template-areas:
-    "hd"
-    "feat"
-    "main"
-    "ft";
-  border: 2px solid yellow;
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(245, 245, 245);
+  letter-spacing: 0.5px;
 }
-.box {
-  width: 100%;
-  border: 1px solid red;
-  background: #f8fa9d;
+
+a {
+  text-decoration: none;
+  color: #272727;
+}
+
+a:hover {
+  background-color: rgb(84, 0, 163);
+  font-size: 0.8em !important;
+  color: #ddd;
+  padding: 12px;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+.content {
+  grid-area: content;
+  position: relative;
+  text-align: center;
 }
 
 .header {
-  grid-area: hd;
+  grid-area: header;
 }
 
-.footer {
-  grid-area: ft;
+.img-1,
+.img-2,
+.img-3 {
+  width: 100%;
+  opacity: 0.9;
 }
-.feature {
-  grid-area: feat;
-}
-.content {
-  grid-area: main;
+
+.copyright {
+  float: right;
+  padding-right: 1.5em;
+  padding-top: 1em;
+  color: #ddd;
+  font-size: 0.8em;
 }
