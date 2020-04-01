@@ -3,14 +3,14 @@
 @media (min-width: 320px) and (max-width: 598px) {
   .prev,
   .next {
-    font-size: 11px;
     display: none;
   }
 
   .wrapper {
     margin: 0;
     display: grid;
-    grid-template-columns: 290px;
+    grid-template-columns: 280px;
+    padding: 0;
     grid-template-areas:
       "header"
       "sidebar"
@@ -19,6 +19,13 @@
     font-size: 0.8em;
     justify-content: center;
     align-items: center;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .content {
+    grid-area: content;
+    height: 100%;
   }
 
   .links {
@@ -32,7 +39,7 @@
 
   .icons {
     font-size: 1.5em;
-    margin-bottom: 1em;
+    margin-top: 1em;
   }
 
   .author {
@@ -40,9 +47,14 @@
     align-items: center !important;
   }
 
+  .avatar {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
   .images > img {
-    width: 110%;
-    margin: 0.5em;
+    width: 100%;
+    margin-bottom: 0.2em;
   }
 
   .title {
@@ -50,51 +62,40 @@
     font-weight: 600;
     display: block;
     margin-bottom: 0.8em;
+    margin-top: 1em;
   }
 
   .slideshow-container {
-    width: 300px;
-    height: 300px;
-    padding-right: 0.8em;
+    max-width: 1000px;
+    position: relative;
+    margin-bottom: 5em;
   }
 
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
-  .text {
-    font-size: 1em;
-    font-weight: 600;
-    width: 100%;
-    text-align: justify;
-    background-color: rgb(245, 245, 245);
-    color: #272727;
-  }
 
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+  .text {
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: justify;
   }
 
   .numbertext {
-    font-size: 12px;
+    color: rgb(238, 238, 238);
+    text-transform: uppercase;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
   }
 
   .footer {
     grid-area: footer;
     height: 30px;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(49, 49, 49);
     grid-row-end: 4;
     position: relative;
@@ -111,14 +112,13 @@
 @media (min-width: 599px) and (max-width: 900px) {
   .prev,
   .next {
-    font-size: 11px;
     display: none;
   }
 
   .wrapper {
     margin: 0;
     display: grid;
-    grid-template-columns: 500px;
+    grid-template-columns: 490px;
     grid-template-areas:
       "header"
       "sidebar"
@@ -128,19 +128,37 @@
     justify-content: center;
     align-items: center;
   }
+  .sidebar {
+    grid-area: sidebar;
+    padding: 1.999em;
+  }
+  .content {
+    grid-area: content;
+    height: 100%;
+  }
+  .avatar {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .label {
+    font-weight: 600;
+  }
 
   .links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .links > div > a {
     display: inline;
+    text-transform: uppercase;
   }
 
   .icons {
     font-size: 1.5em;
-    margin-bottom: 1em;
+    margin-top: 1.5em;
   }
 
   .author {
@@ -148,18 +166,25 @@
     align-items: center !important;
   }
 
+  .images > img {
+    width: 100%;
+    margin-bottom: 0.2em;
+    align-items: center;
+  }
+
   .title {
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: center;
     font-weight: 600;
     display: block;
     margin-bottom: 0.8em;
+    margin-top: 1.5em;
   }
 
   .slideshow-container {
-    width: 100%;
-    height: 90%;
-    margin-bottom: 0.8em;
+    max-width: 1000px;
+    position: relative;
+    margin-bottom: 5em;
   }
 
   .next {
@@ -168,43 +193,38 @@
   }
 
   .text {
-    font-size: 1em;
+    font-size: 0.5em;
     font-weight: 600;
-    width: 100%;
+    font-size: 1em;
     text-align: justify;
-    background-color: rgb(245, 245, 245);
-    color: #272727;
   }
 
   .numbertext {
-    color: #ddd;
+    color: rgb(236, 236, 236);
     text-transform: uppercase;
     font-size: 1.5em;
+    font-family: "Times New Roman", Times, serif;
     padding: 8px 12px;
     position: absolute;
     top: 0;
   }
 
-  .prev,
-  .next {
+  .dot {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    height: 15px;
+    width: 15px;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
   }
 
   .footer {
     grid-area: footer;
     height: 30px;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(49, 49, 49);
     grid-row-end: 4;
     position: relative;
@@ -221,22 +241,31 @@
 @media (min-width: 901px) {
   .prev,
   .next {
-    font-size: 11px;
     display: none;
   }
 
   .wrapper {
-    margin: 1em 0 0 0;
+    margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: 850px;
+    grid-template-columns: 20% 30% 30%;
     grid-template-areas:
-      "header"
-      "sidebar"
-      "content"
-      "footer";
+      "header header header"
+      "sidebar content content"
+      "footer footer footer";
     font-size: 0.9em;
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    padding: 1.999em;
+  }
+  .content {
+    grid-area: content;
+    height: 100%;
   }
 
   .links {
@@ -245,19 +274,14 @@
   }
 
   .links > div > a {
-    display: block;
-  }
-
-  .links > div > label {
-    margin-bottom: 1em;
-    margin-top: 1.5em;
-    background-color: rgb(230, 230, 230);
-    color: #272727;
+    display: inline-block;
   }
 
   .icons {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+    font-size: 1.8em;
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 0.8em;
   }
 
   .author {
@@ -265,9 +289,18 @@
     align-items: center !important;
   }
 
+  .avatar {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
   .images > img {
     width: 100%;
-    margin: 0.5em;
+    margin-bottom: 0.8em;
+  }
+
+  .label {
+    font-weight: 600;
   }
 
   .title {
@@ -276,12 +309,13 @@
     font-weight: 600;
     display: block;
     margin-bottom: 0.8em;
+    margin-top: 1em;
   }
 
   .slideshow-container {
-    width: 100%;
-    height: 70%;
-    margin-bottom: 0.8em;
+    max-width: 1000px;
+    position: relative;
+    margin-bottom: 9em;
   }
 
   .next {
@@ -292,41 +326,35 @@
   .text {
     font-size: 1em;
     font-weight: 600;
-    width: 100%;
     text-align: justify;
-    background-color: rgb(245, 245, 245);
-    color: #272727;
   }
 
   .numbertext {
-    color: #ddd;
+    color: rgb(241, 241, 241);
     text-transform: uppercase;
     font-size: 1.5em;
+    font-weight: 600;
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    font-family: "Times New Roman", Times, serif;
   }
 
-  .prev,
-  .next {
+  .dot {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    height: 15px;
+    width: 15px;
+    margin-bottom: 2.5em;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
   }
 
   .footer {
     grid-area: footer;
     height: 30px;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(49, 49, 49);
     grid-row-end: 4;
     position: relative;

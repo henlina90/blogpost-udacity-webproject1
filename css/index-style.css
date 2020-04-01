@@ -40,6 +40,10 @@ a:hover {
   text-align: left;
 }
 
+.card > img {
+  width: 100%;
+}
+
 .button {
   background-color: #ddd;
   border: none;
