@@ -153,18 +153,25 @@
     margin: 1em;
   }
 
+  .copyright {
+    float: right;
+    padding-right: 1em;
+    color: #ddd;
+  }
+
   .footer {
     grid-area: footer;
-    height: 30px;
+    height: 35px;
     width: 100%;
+    padding: 0.5em;
     background-color: rgb(49, 49, 49);
+    grid-row-end: 4;
     position: absolute;
-    justify-content: stretch;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
     margin-top: 2em;
-    padding: 0.5em;
+    font-size: 0.8em;
   }
 }
