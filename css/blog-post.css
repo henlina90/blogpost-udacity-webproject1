@@ -61,7 +61,7 @@ a:hover {
 .copyright {
   float: right;
   padding-right: 1.5em;
-  padding-top: 1em;
+  padding: 0.5em;
   color: #ddd;
   font-size: 0.8em;
 }

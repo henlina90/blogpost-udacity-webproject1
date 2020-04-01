@@ -353,11 +353,12 @@
 
   .footer {
     grid-area: footer;
-    height: 30px;
+    height: 40px;
     width: 100%;
+    padding: 0.5em;
     background-color: rgb(49, 49, 49);
     grid-row-end: 4;
-    position: relative;
+    position: absolute;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
