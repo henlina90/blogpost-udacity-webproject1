@@ -33,7 +33,7 @@
     flex-direction: column;
   }
 
-  .links > div > a {
+  .link > a {
     display: block;
   }
 
@@ -151,11 +151,13 @@
     justify-content: space-evenly;
   }
 
-  .links > div > a {
-    display: inline;
-    text-transform: uppercase;
+  .link > a {
+    display: block;
+    font-size: 0.9em;
   }
-
+  .link > label {
+    font-size: 1em;
+  }
   .icons {
     font-size: 1.5em;
     margin-top: 1.5em;
@@ -273,10 +275,13 @@
     flex-direction: column;
   }
 
-  .links > div > a {
-    display: inline-block;
+  .link > a {
+    display: block;
+    font-size: 0.7em;
   }
-
+  .link > label {
+    font-size: 0.8em;
+  }
   .icons {
     font-size: 1.8em;
     display: block;

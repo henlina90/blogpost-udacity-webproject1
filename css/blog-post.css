@@ -72,7 +72,9 @@ a:hover {
 .mySlides {
   display: none;
 }
-
+.dots {
+  text-align: center;
+}
 /* Next & previous buttons */
 .prev,
 .next {
