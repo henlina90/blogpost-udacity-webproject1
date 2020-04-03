@@ -7,39 +7,40 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
       name="viewport"
     />
-    <link rel="stylesheet" href="css/index-style.css" />
-    <link rel="stylesheet" href="css/index-media-queries.css" />
-
     <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="css/index-style.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <div class="header">
+      <header>
         <h1>Blog.</h1>
         <div class="icons">
+          <i class="fa fa-share-alt"></i>
           <a href="http://google.com"><i class="fa fa-facebook-square"></i></a>
           <a href="http://google.com"><i class="fa fa-github-square"></i></a>
           <a href="http://google.com"><i class="fa fa-linkedin-square"></i></a>
           <a href="http://google.com"><i class="fa fa-twitter-square"></i></a>
         </div>
         <hr />
-      </div>
-
-      <div class="content">
-        <h2>Welcome to my first blog.</h2>
-
-        <i class="fa fa-ellipsis-h"></i><i class="fa fa-ellipsis-h"></i
-        ><i class="fa fa-ellipsis-h"></i>
-        <p><small>[click below to explore]</small></p>
+      </header>
+      <section class="content">
+        <div class="content-header">
+          <h2>Welcome to my first blog.</h2>
+          <i class="fa fa-ellipsis-h"></i>
+          <i class="fa fa-ellipsis-h"></i>
+          <i class="fa fa-ellipsis-h"></i>
+          <p><small>[click below to explore]</small></p>
+        </div>
         <div class="flex-container">
           <div class="card">
             <img src="img/tonle-sap.jpg" alt="Avatar" />
+            <figcaption>
+              Floating Village, on Tonle Sap Lake in Cambodia.
+            </figcaption>
             <div class="container">
               <h4><b>Blog 1</b></h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -50,6 +51,9 @@
           </div>
           <div class="card">
             <img src="img/tonle-sap.jpg" alt="Avatar" />
+            <figcaption>
+              Floating Village, on Tonle Sap Lake in Cambodia.
+            </figcaption>
             <div class="container">
               <h4><b>Blog 1</b></h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -62,6 +66,9 @@
         <div class="flex-container">
           <div class="card">
             <img src="img/tonle-sap.jpg" alt="Avatar" />
+            <figcaption>
+              Floating Village, on Tonle Sap Lake in Cambodia.
+            </figcaption>
             <div class="container">
               <h4><b>Blog 1</b></h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -72,6 +79,9 @@
           </div>
           <div class="card">
             <img src="img/tonle-sap.jpg" alt="Avatar" />
+            <figcaption>
+              Floating Village, on Tonle Sap Lake in Cambodia.
+            </figcaption>
             <div class="container">
               <h4><b>Blog 1</b></h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -81,7 +91,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
     <div class="footer">
       <span class="copyright">&copy; Lina's Blog 2020</span>

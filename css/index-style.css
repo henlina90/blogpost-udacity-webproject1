@@ -1,3 +1,7 @@
+@import "/css/index-media-queries.css";
+@import "/css/blog-media-queries.css";
+@import "/css/blog-post.css";
+
 /*  BASE STYLE  */
 
 html,
@@ -7,37 +11,37 @@ body {
   letter-spacing: 0.5px;
 }
 
-.header {
-  padding: 0.8em;
+.content-header {
+  text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: #272727;
+  color: maroon;
 }
 
 a:hover {
-  color: rgb(84, 0, 163);
+  color: #272727;
   font-size: 1.3em !important;
 }
 
 .icons {
   display: flex;
   cursor: pointer;
-  margin-top: 1.5em;
-  justify-content: space-between;
   width: 130px;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  justify-content: space-evenly;
 }
 
-.fa-facebook-square,
-.fa-github-square,
-.fa-linkedin-square,
-.fa-twitter-square {
-  font-size: 1.8em !important;
+figcaption {
+  padding: 0.5em;
+  font-size: x-small;
+  text-align: justify;
 }
 
-.card {
-  text-align: left;
+.container {
+  text-align: center;
 }
 
 .card > img {
@@ -52,9 +56,10 @@ a:hover {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 3px 1px;
+  margin: 0.8em;
   cursor: pointer;
   font-weight: 600;
+  border-radius: 10px;
 }
 
 .button:hover {
@@ -65,7 +70,7 @@ a:hover {
 .content {
   grid-area: content;
   position: relative;
-  text-align: center;
+  /* text-align: center; */
   padding: 0.8em;
 }
 
