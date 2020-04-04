@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1.5em;
@@ -10,38 +11,26 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.blog-wrapper > header {
+.blog-wrapper {
   margin: 0;
-}
-
-blockquote {
   padding: 0;
-  margin: 0;
-  text-align: justify;
-  font-size: 0.7em;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
-article {
-  margin-bottom: 2em;
+/* making use of the sections :) */
+.about-author,
+.sidebar-images,
+.links,
+.main-content,
+.sub-content-1,
+.sub-content-2 {
+  margin: 2em 1em 0 1em;
 }
 
-label {
-  padding: 1px;
-  background-color: rgb(230, 230, 230);
-  font-weight: 600;
-}
-
-.link {
-  padding: 1em;
-}
-
-.link > a {
-  margin: 1.5px;
-  font-weight: 600;
-}
-
-.fa-camera-retro {
-  margin: 0.8em;
+.sidebar {
+  grid-area: sidebar;
 }
 
 .avatar {
@@ -51,13 +40,41 @@ label {
   margin: 0.5em 0 0.5em 0;
 }
 
-.label {
-  margin: 0.8em;
+blockquote {
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+  font-size: 0.7em;
+}
+
+.sidebar-images > label {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+}
+
+figure {
+  width: 80%;
+}
+
+.sidebar-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.links {
+  font-size: 0.8em;
   font-weight: 600;
 }
 
-.blog {
-  margin-top: 3em;
+label {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+  background-color: rgb(230, 230, 230);
   font-weight: 600;
 }
 
@@ -65,6 +82,29 @@ label {
   background-color: #303030;
   color: #ddd;
   border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.8em;
+  padding: 0.5em;
+}
+
+.content {
+  grid-area: content;
+  height: 100%;
+  justify-content: center;
+  text-align: justify;
+}
+
+.blog-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 .copyright {
@@ -75,92 +115,16 @@ label {
   font-size: 0.8em;
 }
 
-/* Slideshow container */
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #ddd;
-  background-color: rgba(0, 0, 0, 0.836);
-  padding: 8px 12px;
-  position: absolute;
+footer {
+  grid-area: footer;
+  height: 30px;
   width: 100%;
-  text-align: justify;
-  border-radius: 10px;
-}
-
-.dots {
-  text-align: center;
-}
-
-.dot {
-  background-color: #272727;
-}
-
-img {
-  border-radius: 10px;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+  background-color: rgb(49, 49, 49);
+  grid-row-end: 4;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 2em;
 }
