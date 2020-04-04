@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="../css/index-style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,12 +14,12 @@
   <body>
     <div class="blog-wrapper">
       <header>
-        <a href="index.html"><h5>BACK TO HOMEPAGE</h5></a>
+        <a href="../index.html"><h5>BACK TO HOMEPAGE</h5></a>
       </header>
       <div class="sidebar">
         <section class="about-author">
           <label>About the Author</label>
-          <img src="img/blog-avatar.png" alt="Avatar" class="avatar" />
+          <img src="../img/blog-avatar.png" alt="Avatar" class="avatar" />
           <blockquote cite="http://www.worldwildlife.org/who/index.html">
             "WELCOME HOME FELLOW TRAVELER! Hi, I’m Nomadic Matt, a New York
             Times best-selling author of How to Travel the World on $50 a Day
@@ -34,7 +34,7 @@
         <section class="sidebar-images">
           <label><i class="fa fa-camera-retro"></i>#photos</label>
           <figure>
-            <img src="img/food3.jpg" alt="food-1" />
+            <img src="../img/food3.jpg" alt="food-1" />
             <figcaption>
               Chaa kdam meric kchai (Fried crab with green pepper): Local crab
               is a specialty of the Cambodian seaside town of Kep.
@@ -42,14 +42,14 @@
             <hr />
           </figure>
           <figure>
-            <img src="img/blog-img3.jpg" alt="food-1" />
+            <img src="../img/blog-img3.jpg" alt="food-1" />
             <figcaption>
               ‘Apsara dance performance’ - a taste of classical Khmer culture.
             </figcaption>
             <hr />
           </figure>
           <figure>
-            <img src="img/tonle-sap.jpg" alt="food-1" />
+            <img src="../img/tonle-sap.jpg" alt="food-1" />
             <figcaption>
               Kompong Khleang is the Best Floating Village to visit in Siem
               Reap.
@@ -145,34 +145,32 @@
           <div class="slideshow-container">
             <div class="mySlides">
               <div class="numbertext">Angkor Wat</div>
-              <img src="img/ankorwat.jpg" />
-              <div class="text">
+              <img src="../img/ankorwat.jpg" />
+              <p class="text">
                 These temple ruins are massive, and you’ll need a few days to
                 satisfying your inner Tomb Raider and exploring these ruins. If
                 you’re not a history buff then just purchase a single-day ticket
-                ($37). Everyone else may want to consider the 3-day ticket
-                ($72), which offers a bit of a discount.
-              </div>
+                ($37).
+              </p>
             </div>
             <div class="mySlides">
               <div class="numbertext">Battambang</div>
-              <img src="img/battambang.jpg" />
-              <div class="text">
+              <img src="../img/battambang.jpg" />
+              <p class="text">
                 Here you’ll find great temples, a bamboo train, and stunning
                 architecture. It’s Cambodia without the tourism — for now! Try
                 taking a river boat back to Phnom Phen or Siem Reap for a unique
-                experience (tickets are usually around $20 USD per person).
-              </div>
+                experience.
+              </p>
             </div>
             <div class="mySlides">
               <div class="numbertext">Phnom Penh</div>
-              <img src="img/phnom-penh.jpg" />
-              <div class="text">
+              <img src="../img/phnom-penh.jpg" />
+              <p class="text">
                 As the capital of Cambodia, this place has a wild west ambiance
                 with dusty streets and a “devil may care” atmosphere. There are
-                a few good attractions to see and an up-and-coming foodie vibe
-                to the city.
-              </div>
+                a few good attractions and-coming foodie vibe to the city.
+              </p>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -242,39 +240,6 @@
     <footer>
       <span class="copyright">&copy; Lina's Blog 2020</span>
     </footer>
-
-    <!-- Start of script for slides -->
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
+    <script src="../js/slideshow.js"></script>
   </body>
 </html>
